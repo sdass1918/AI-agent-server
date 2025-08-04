@@ -16,7 +16,7 @@ The AI Agent Server is a TypeScript (Node.js) backend that provides an AI-powere
 - **Express**: To handle HTTP requests and define routes.
 - **OpenAI API**: For generating AI responses and embedding text.
 - **Custom Cosine Similarity**: For vector search to find similar document chunks.
-- **Hosting**: The application can be hosted on platforms like Railway or Render.
+- **Hosting**: I have hosted the application on render.
 
 ## Getting Started
 
@@ -48,14 +48,15 @@ The server will be available at `http://localhost:3000`.
   - **Request Body**:
     ```json
     {
-      "message": "Your message here",
-      "session_id": "unique_session_identifier"
+    "message": "What is 2 + 3 * 4?",
+    "session_id": "test-session-123"
     }
     ```
   - **Response**:
     ```json
     {
-      "reply": "AI-generated response here"
+    "reply": "AI-generated response based on the prompt",
+    "pluginResponse": "14"
     }
     ```
 
@@ -63,9 +64,3 @@ The server will be available at `http://localhost:3000`.
 - Send a message to the agent to receive a contextual reply based on previous interactions.
 - Use the weather plugin by asking about the weather in a specific location.
 - Evaluate mathematical expressions by sending them as messages.
-
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
