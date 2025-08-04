@@ -64,3 +64,10 @@ The server will be available at `http://localhost:3000`.
 - Send a message to the agent to receive a contextual reply based on previous interactions.
 - Use the weather plugin by asking about the weather in a specific location.
 - Evaluate mathematical expressions by sending them as messages.
+## 🧪 Demo
+
+### 📫 POST /agent/message — Postman Test
+The image below shows a working example of the endpoint tested with Postman.
+
+![Postman Test](./Postman.png)
+
